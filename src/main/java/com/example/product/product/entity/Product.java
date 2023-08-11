@@ -17,9 +17,7 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Setter
 @Getter
 public class Product extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private long id;
+
     private String name;
     private int price;
 

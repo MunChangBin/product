@@ -18,9 +18,6 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Getter
 @Setter
 public class Member extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private long id;
     @Column(unique = true)
     private String username;
     private String password;
